@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myapp';
+  show =false
+  onClick(){
+    this.show=!this.show
+  }
+  name="welcome"
 }

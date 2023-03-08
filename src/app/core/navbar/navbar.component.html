@@ -1,0 +1,30 @@
+<div class="nav"  style="min-height: 100vh;">
+    <mat-toolbar color="primary">
+      <div fxShow="true" fxHide.gt-sm="true">
+        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      </div>
+      <span class="example-spacer" fxHide.gt-sm="true"></span>
+      <span>Angular Training</span>
+      <span class="example-spacer" fxHide.lt-md="true"></span>
+      <div fxShow="true" fxHide.lt-md="true">
+        <a routerLink="/app/work1" routerLinkActive="active" mat-button>work 1</a>
+        <a routerLink="/app/work2" routerLinkActive="active" mat-button>work 2</a>
+        <a routerLink="/app/work3" routerLinkActive="active" mat-button>work 3</a>
+      </div>
+    </mat-toolbar>
+    <mat-sidenav-container fxFlexFill class="example-container" >
+      <mat-sidenav #sidenav fxLayout="column" >
+        <div fxLayout="column" class="column">
+          <a routerLink="/app/work1" routerLinkActive="active" mat-button>work 1</a>
+          <mat-divider></mat-divider>
+          <a routerLink="/app/work2" routerLinkActive="active" mat-button>work 2</a>
+          <mat-divider></mat-divider>
+          <a routerLink="/app/work3" routerLinkActive="active" mat-button>work 3</a>
+          <mat-divider></mat-divider>
+        </div>
+      </mat-sidenav>
+      <mat-sidenav-content>
+      <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>

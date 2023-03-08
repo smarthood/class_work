@@ -1,0 +1,19 @@
+<div class="controller" fxLayout="row" fxLayoutAlign="center" fxLayoutGap="20px">
+<div class="vertical">
+<button mat-button [matMenuTriggerFor]="menu"><span fxHide.lt-md="true">Horizontal</span><span fxHide.gt-md="true" fxHide.md="true">vertical</span></button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item *ngFor="let item of vertical" (click)="onVert(item)">{{item}}</button>
+</mat-menu>
+</div>
+<div class="horizontal">
+    <button mat-button [matMenuTriggerFor]="menu1"><span fxHide.lt-md="true">vertical</span><span fxHide.gt-md="true" fxHide.md="true">Horizontal</span></button>
+<mat-menu #menu1="matMenu">
+  <button mat-menu-item *ngFor="let item1 of horizontal" (click)="onHor(item1)">{{item1}}</button>
+</mat-menu>
+</div>
+</div>
+<div class="container" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="5px" fxLayoutAlign="{{vert}} {{hor}}">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
