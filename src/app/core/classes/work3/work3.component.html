@@ -2,7 +2,7 @@
 <div class="vertical">
 <button mat-button [matMenuTriggerFor]="menu"><span fxHide.lt-md="true">Horizontal</span><span fxHide.gt-md="true" fxHide.md="true">vertical</span></button>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item *ngFor="let item of vertical" (click)="onVert(item)">{{item}}</button>
+  <button mat-menu-item *ngFor="let item of vertical" (click)="onVert(item)" [ngStyle]="{'color' :'black' }">{{item}}</button>
 </mat-menu>
 </div>
 <div class="horizontal">
@@ -12,8 +12,20 @@
 </mat-menu>
 </div>
 </div>
-<div class="container" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="5px" fxLayoutAlign="{{vert}} {{hor}}">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+<div class="row-column">
+  <mat-radio-group aria-label="Select an option" [(ngModel)]="direct">
+    <mat-radio-button value="row">row</mat-radio-button>
+    <mat-radio-button value="column">column</mat-radio-button>
+  </mat-radio-group>
+</div>
+<div class="container" fxLayout="{{direct}}" fxLayoutGap="5px" fxLayoutAlign="{{vert}} {{hor}}">
+    <div class="box" fxLayoutAlign="center center">
+      <div class="num">1</div>
+    </div>
+    <div class="box" fxLayoutAlign="center center">
+      <div class="num">2</div>
+    </div>
+    <div class="box" fxLayoutAlign="center center">
+      <div class="num">3</div>
+    </div>
 </div>

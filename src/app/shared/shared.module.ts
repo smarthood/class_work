@@ -17,6 +17,8 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatRadioModule} from '@angular/material/radio';
+
 @NgModule({
   declarations: [],
   imports: [
@@ -41,7 +43,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatPaginatorModule,
     MatSortModule,
     MatInputModule,
-    MatMenuModule
+    MatMenuModule,
+    MatRadioModule
   ],
   exports:[
     CommonModule,
@@ -65,7 +68,8 @@ import {MatMenuModule} from '@angular/material/menu';
     MatPaginatorModule,
     MatSortModule,
     MatInputModule,
-    MatMenuModule
+    MatMenuModule,
+    MatRadioModule
   ]
 })
 export class SharedModule { }
