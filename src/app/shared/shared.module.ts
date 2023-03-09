@@ -18,6 +18,7 @@ import { MatSortModule } from '@angular/material/sort';
 import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatRadioModule} from '@angular/material/radio';
+import { NgStyle } from '@angular/common';
 
 @NgModule({
   declarations: [],
@@ -44,7 +45,8 @@ import {MatRadioModule} from '@angular/material/radio';
     MatSortModule,
     MatInputModule,
     MatMenuModule,
-    MatRadioModule
+    MatRadioModule,
+    NgStyle
   ],
   exports:[
     CommonModule,
@@ -69,7 +71,8 @@ import {MatRadioModule} from '@angular/material/radio';
     MatSortModule,
     MatInputModule,
     MatMenuModule,
-    MatRadioModule
+    MatRadioModule,
+    NgStyle
   ]
 })
 export class SharedModule { }

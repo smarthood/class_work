@@ -2,7 +2,7 @@
 <div class="vertical">
 <button mat-button [matMenuTriggerFor]="menu"><span fxHide.lt-md="true">Horizontal</span><span fxHide.gt-md="true" fxHide.md="true">vertical</span></button>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item *ngFor="let item of vertical" (click)="onVert(item)" [ngStyle]="{'color' :'black' }">{{item}}</button>
+  <button mat-menu-item *ngFor="let item of vertical" (click)="onVert(item)" >{{item}}</button>
 </mat-menu>
 </div>
 <div class="horizontal">

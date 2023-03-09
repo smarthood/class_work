@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./work3.component.scss']
 })
 export class Work3Component {
-  @Input() direct:string ="row"
+@Input() direct:string ="row"
 vertical=["none","start","center","end","space-around","space-between","space-evenly"]
 horizontal=["none","start","center","end","stretch"]
 
