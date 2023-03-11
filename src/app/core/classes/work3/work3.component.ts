@@ -10,10 +10,19 @@ export class Work3Component {
 @Input() gap:number =5
 vertical=["none","start","center","end","space-around","space-between","space-evenly"]
 horizontal=["none","start","center","end","stretch"]
-
+box:any=[]
+i=1
 vert="start"
 hor="stretch"
-
+onInc(){
+  if(this.i<=10){
+    this.box.push(this.i++)
+  }
+}
+onDec(){
+  this.box.pop()
+  this.i--
+}
 onVert(item:string){
   this.vert=item
 }

@@ -25,34 +25,28 @@
           </div>
           <div class="gap">
             Gap
-            <input type="number" style='width:"35px"' [(ngModel)]="gap" />
+            <input type="number" style='width:"35px"' max="100" [(ngModel)]="gap" />
           </div>
           </div>
           <div class="button">
-            <button mat-stroked-button>Add</button>
-            <button mat-stroked-button>Delete</button>
+            <button mat-stroked-button (click)="onInc()">Add</button>
+            <button mat-stroked-button (click)="onDec()">Delete</button>
           </div>
       </div>
       <div class="label" fxLayoutAlign="space-around center" style="background-color: rgba(240, 248, 255, 0.603);color: black; padding: 10px 0;margin-top: 10px;">
         <span>
-          fxLayout: "{{direct}}"
+          fxLayout= "{{direct}}"
         </span>
         <span>
-          fxLayoutAlign: "{{vert}}  {{hor}}"
+          fxLayoutAlign= "{{vert}}  {{hor}}"
         </span>
         <span>
-          fxLayoutGap: "{{gap}}"
+          fxLayoutGap= "{{gap}}"
         </span>
       </div>
-      <div class="container" fxLayout="{{direct}}" fxLayoutGap="{{gap}}" fxLayoutAlign="{{vert}} {{hor}}">
-        <div class="box" fxLayoutAlign="center center">
-          <div class="num">1</div>
-        </div>
-        <div class="box" fxLayoutAlign="center center">
-          <div class="num">2</div>
-        </div>
-        <div class="box" fxLayoutAlign="center center">
-          <div class="num">3</div>
+      <div class="container" fxLayout="{{direct}}" fxLayoutGap="{{gap}}" fxLayoutAlign="{{vert}} {{hor}}" >
+        <div class="box" fxLayoutAlign="center center" *ngFor="let i of box">
+          <div class="num">{{i}}</div>
         </div>
       </div>
     </div>
