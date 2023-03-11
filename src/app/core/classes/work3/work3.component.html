@@ -29,9 +29,20 @@
           </div>
           </div>
           <div class="button">
-            <button>Add</button>
-            <button>Delete</button>
+            <button mat-stroked-button>Add</button>
+            <button mat-stroked-button>Delete</button>
           </div>
+      </div>
+      <div class="label" fxLayoutAlign="space-around center" style="background-color: rgba(240, 248, 255, 0.603);color: black; padding: 10px 0;margin-top: 10px;">
+        <span>
+          fxLayout: "{{direct}}"
+        </span>
+        <span>
+          fxLayoutAlign: "{{vert}}  {{hor}}"
+        </span>
+        <span>
+          fxLayoutGap: "{{gap}}"
+        </span>
       </div>
       <div class="container" fxLayout="{{direct}}" fxLayoutGap="{{gap}}" fxLayoutAlign="{{vert}} {{hor}}">
         <div class="box" fxLayoutAlign="center center">
