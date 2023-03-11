@@ -19,60 +19,43 @@ import {MatInputModule} from '@angular/material/input';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatRadioModule} from '@angular/material/radio';
 import { NgStyle } from '@angular/common';
+import {MatDialogModule} from '@angular/material/dialog';
+
+const MaterialList=[
+  CommonModule,
+  MatSidenavModule,
+  FlexLayoutModule,
+  MatToolbarModule,
+  MatButtonModule,
+  MatIconModule,
+  RouterModule,
+  MatDividerModule,
+  MatGridListModule,
+  MatCardModule,
+  FormsModule,
+  LayoutModule,
+  MatToolbarModule,
+  MatButtonModule,
+  MatSidenavModule,
+  MatIconModule,
+  MatListModule,
+  MatTableModule,
+  MatPaginatorModule,
+  MatSortModule,
+  MatInputModule,
+  MatMenuModule,
+  MatRadioModule,
+  NgStyle,
+  MatDialogModule
+]
 
 @NgModule({
   declarations: [],
   imports: [
-    CommonModule,
-    MatSidenavModule,
-    FlexLayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
-    RouterModule,
-    MatDividerModule,
-    MatGridListModule,
-    MatCardModule,
-    FormsModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
-    MatInputModule,
-    MatMenuModule,
-    MatRadioModule,
-    NgStyle
+    MaterialList
   ],
   exports:[
-    CommonModule,
-    MatSidenavModule,
-    FlexLayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatIconModule,
-    RouterModule,
-    MatDividerModule,
-    MatGridListModule,
-    MatCardModule,
-    FormsModule,
-    LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule,
-    MatInputModule,
-    MatMenuModule,
-    MatRadioModule,
-    NgStyle
+   MaterialList
   ]
 })
 export class SharedModule { }

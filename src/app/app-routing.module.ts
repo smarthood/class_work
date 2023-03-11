@@ -4,6 +4,7 @@ import { NavbarComponent } from './core/navbar/navbar.component';
 import { TableComponent } from './core/table/table.component';
 import { Work1Component } from './core/classes/work1/work1.component';
 import { Work3Component } from './core/classes/work3/work3.component';
+import { WorkZComponent } from './core/classes/work-z/work-z.component';
 
 const routes: Routes = [
   {path:'',redirectTo:'/app/work1',pathMatch:'full'},
@@ -12,6 +13,7 @@ const routes: Routes = [
         {path:'work1',component:Work1Component},
         {path:'work2',component:TableComponent},
         {path:'work3',component:Work3Component},
+        {path:'work4',component:WorkZComponent}
     ]
   }
 ];

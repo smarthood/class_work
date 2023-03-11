@@ -1,3 +1,6 @@
+.main{
+    padding: 10px;
+}
 .container{
     margin: 20px;
     border: 1px solid white;
@@ -15,4 +18,7 @@
 }
 .box:nth-child(3){
     background-color: yellow;
+}
+.gap{
+    padding-left: 10px;
 }
