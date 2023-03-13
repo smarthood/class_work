@@ -20,6 +20,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatRadioModule} from '@angular/material/radio';
 import { NgStyle } from '@angular/common';
 import {MatDialogModule} from '@angular/material/dialog';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 const MaterialList=[
   CommonModule,
@@ -46,7 +47,8 @@ const MaterialList=[
   MatMenuModule,
   MatRadioModule,
   NgStyle,
-  MatDialogModule
+  MatDialogModule,
+  DragDropModule
 ]
 
 @NgModule({

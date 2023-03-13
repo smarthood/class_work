@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-work3',
@@ -14,14 +14,17 @@ box:any=[]
 i=1
 vert="start"
 hor="stretch"
+
 onInc(){
   if(this.i<=10){
     this.box.push(this.i++)
   }
 }
 onDec(){
-  this.box.pop()
-  this.i--
+  if(this.i>1){
+    this.box.pop()
+    this.i--
+  }
 }
 onVert(item:string){
   this.vert=item
